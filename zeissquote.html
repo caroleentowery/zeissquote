@@ -1,0 +1,819 @@
+<script type="text/javascript">
+	
+		
+	//STARTS SECTION FOR COMBO DROP DOWN BOXES
+	// first combo box
+	data_1 = new Option("DuraMax", "DuraMax");
+	data_2 = new Option("2", "Contura G2 - Direkt");
+	data_3 = new Option("3", "Contura G2 - RDS");
+	data_4 = new Option("4", "Contura G2 - Aktiv");
+	data_5 = new Option("5", "Contura G2 - Navigator");
+	data_6 = new Option("6", "Accura II");
+	data_7 = new Option("7", "Prismo Navigator 5 & 7");
+	data_8 = new Option("8", "Prismo Navigator 10");
+	data_9 = new Option("9", "Prismo Ultra");
+	data_10 = new Option("10", "CenterMax");
+	data_11 = new Option("11", "GageMax");
+	data_12 = new Option("12", "FaroArm");	
+	data_13 = new Option("13", "Spectrum II - Direkt XDT");
+	data_14 = new Option("14", "Spectrum II - RDS TP20");
+	data_15 = new Option("15", "Spectrum II - RDS XDT");
+	data_16 = new Option("16", "Micura");
+	data_17 = new Option("17", "O-Inspect")
+		
+	// second combo box
+	data_1_1 = new Option("DuraMax", "DuraMax");
+	data_2_1 = new Option("Contura G2 - Direkt 1000", "Contura G2 - Direkt 1000");
+	data_2_2 = new Option("Contura G2 - Direkt 700", "Contura G2 - Direkt 700");
+	data_3_1 = new Option("Contura G2 - RDS 1000", "Contura G2 - RDS 1000");
+	data_3_2 = new Option("Contura G2 - RDS 700", "Contura G2 - RDS 700");
+	data_4_1 = new Option("Contura G2 - Aktiv 1000", "Contura G2 - Aktiv 1000");
+	data_4_2 = new Option("Contura G2 - Aktiv 700", "Contura G2 - Aktiv 700");
+	data_5_1 = new Option("Contura G2 Navigator 700 - only choice", "Contura G2 Navigator 700");
+    data_6_1 = new Option("Accura II 10 (RDS)", "Accura II 10 (RDS)");
+    data_6_2 = new Option("Accura II 10 Aktiv", "Accura II 10 Aktiv");
+    data_6_3 = new Option("Accura II 8 (RDS)", "Accura II 8 (RDS)");
+    data_6_4 = new Option("Accura II 8 Aktiv", "Accura II 8 Aktiv");
+    data_6_5 = new Option("Accura II x=2000 (RDS)", "Accura II x=2000 (RDS)");
+    data_6_6 = new Option("Accura II x=2000 Aktiv", "Accura II x=2000 Aktiv");
+    data_7_1 = new Option("Prismo Navigator 5 & 7 - only choice", "Prismo Navigator 5 & 7");
+    data_8_1 = new Option("Prismo Navigator 10 - only choice", "Prismo Navigator 10");
+    data_9_1 = new Option("Prismo Navigator Ultra - only choice", "Prismo Navigator Ultra");
+    data_10_1 = new Option("CenterMax - only choice", "CenterMax");
+    data_11_1 = new Option("GageMax - only choice", "GageMax");
+	// COMMENTED OUT FARO - 6 Axis OPTION PER RYAN/TED AND RENUMBERED THROUGH 12_1 instead of 12_2 *CHT 6/15/11    
+	//    data_12_1 = new Option("FaroArm - 6 Axis", "FaroArm - 6 Axis");
+    data_12_1 = new Option("FaroArm - 7 Axis - only choice", "FaroArm - 7 Axis");
+    data_13_1 = new Option("Spectrum II - Direkt XDT - only choice", "Spectrum II - Direkt XDT");
+    data_14_1 = new Option("Spectrum II - RDS TP20 - only choice", "Spectrum II - RDS TP20");
+    data_15_1 = new Option("Spectrum II - RDS XDT - only choice", "Spectrum II - RDS XDT");
+    data_16_1 = new Option("Micura", "Micura");
+    data_17_1 = new Option("O-Inspect", "O-Inspect")
+      
+	// third combo box
+	data_1_1_1 = new Option("DuraMax 500/500/500", "DuraMax 500/500/500");	
+	data_1_1_2 = new Option("DuraMax 500/500/500 Gear", "DuraMax 500/500/500 Gear");
+	data_1_1_3 = new Option("DuraMax 500/500/500 Shop Floor", "DuraMax 500/500/500 Shop Floor");	
+	data_1_1_4 = new Option("DuraMax 500/500/500 Rotary Table", "DuraMax 500/500/500 Rotary Table");
+	data_2_1_1 = new Option("Contura G2 direkt 1000/1200/600", "Contura G2 direkt 1000/1200/600");
+	data_2_1_2 = new Option("Contura G2 direkt 1000/1600/600", "Contura G2 direkt 1000/1600/600");
+	data_2_1_3 = new Option("Contura G2 direkt 1000/2100/600", "Contura G2 direkt 1000/2100/600");
+	data_2_1_4 = new Option("Contura G2 direkt 1000/2100/600 U-Stone", "Contura G2 direkt 1000/2100/600 U-Stone");
+	data_2_2_1 = new Option("Contura G2 direkt 700/700/600", "Contura G2 direkt 700/700/600");
+	data_2_2_2 = new Option("Contura G2 direkt 700/1000/600", "Contura G2 direkt 700/1000/600");	
+	data_3_1_1 = new Option("Contura G2 RDS 1000/1200/600", "Contura G2 RDS 1000/1200/600");
+	data_3_1_2 = new Option("Contura G2 RDS 1000/1600/600", "Contura G2 RDS 1000/1600/600");
+	data_3_1_3 = new Option("Contura G2 RDS 1000/2100/600", "Contura G2 RDS 1000/2100/600");
+	data_3_1_4 = new Option("Contura G2 RDS 1000/1200/600 U-Stone", "Contura G2 RDS 1000/1200/600 U-Stone");
+	data_3_1_5 = new Option("Contura G2 RDS 1000/1600/600 U-Stone", "Contura G2 RDS 1000/1600/600 U-Stone");
+	data_3_1_6 = new Option("Contura G2 RDS 1000/2100/600 U-Stone", "Contura G2 RDS 1000/2100/600 U-Stone");
+	data_3_2_1 = new Option("Contura G2 RDS 700/700/600", "Contura G2 RDS 700/700/600");
+	data_3_2_2 = new Option("Contura G2 RDS 700/1000/600", "Contura G2 RDS 700/1000/600");
+	data_4_1_1 = new Option("Contura G2 AKTIV 1000/1200/600", "Contura G2 AKTIV 1000/1200/600");
+	data_4_1_2 = new Option("Contura G2 AKTIV 1000/1600/600", "Contura G2 AKTIV 1000/1600/600");
+	data_4_1_3 = new Option("Contura G2 AKTIV 1000/2100/600", "Contura G2 AKTIV 1000/2100/600");
+	data_4_1_4 = new Option("Contura G2 AKTIV 1000/1200/600 U-Stone", "Contura G2 AKTIV 1000/1200/600 U-Stone");
+	data_4_1_5 = new Option("Contura G2 AKTIV 1000/1600/600 U-Stone", "Contura G2 AKTIV 1000/1600/600 U-Stone");
+	data_4_1_6 = new Option("Contura G2 AKTIV 1000/2100/600 U-Stone", "Contura G2 AKTIV 1000/2100/600 U-Stone");
+	data_4_2_1 = new Option("Contura G2 AKTIV 700/700/600", "Contura G2 AKTIV 700/700/600");
+	data_4_2_2 = new Option("Contura G2 AKTIV 700/1000/600", "Contura G2 AKTIV 700/1000/600");	
+	data_5_1_1 = new Option("Contura G2 Navigator 700/700/600", "Contura G2 Navigator 700/700/600");
+	data_5_1_2 = new Option("Contura G2 Navigator 700/1000/600", "Contura G2 Navigator 700/1000/600");
+	data_6_1_1 = new Option("Accura II 1200/1800/1000 RDS", "Accura II 1200/1800/1000 RDS");
+	data_6_1_2 = new Option("Accura II 1200/2400/1000 RDS", "Accura II 1200/2400/1000 RDS");
+	data_6_1_3 = new Option("Accura II 1200/3000/1000 RDS", "Accura II 1200/3000/1000 RDS");
+	data_6_1_4 = new Option("Accura II 1200/4200/1000 RDS", "Accura II 1200/4200/1000 RDS");
+	data_6_2_1 = new Option("Accura II 1200/1800/1000 Aktiv", "Accura II 1200/1800/1000 Aktiv");
+	data_6_2_2 = new Option("Accura II 1200/2400/1000 Aktiv", "Accura II 1200/2400/1000 Aktiv");
+	data_6_2_3 = new Option("Accura II 1200/3000/1000 Aktiv", "Accura II 1200/3000/1000 Aktiv");
+	data_6_2_4 = new Option("Accura II 1200/4200/1000 Aktiv", "Accura II 1200/4200/1000 Aktiv");
+	data_6_3_1 = new Option("Accura II 900/1200/800 RDS", " Accura II 900/1200/800 RDS");
+	data_6_3_2 = new Option("Accura II 900/1600/800 RDS", " Accura II 900/1600/800 RDS");
+	data_6_4_1 = new Option("Accura II 900/1200/800 Aktiv", " Accura II 900/1200/800 Aktiv");
+	data_6_4_2 = new Option("Accura II 900/1600/800 Aktiv", " Accura II 900/1600/800 Aktiv");
+	data_6_5_1 = new Option("Accura II 2000/2400/1500 RDS", "Accura II 2000/2400/1500 RDS");
+	data_6_5_2 = new Option("Accura II 2000/3000/1500 RDS", "Accura II 2000/3000/1500 RDS");
+	data_6_5_3 = new Option("Accura II 2000/4200/1500 RDS", "Accura II 2000/4200/1500 RDS");
+	data_6_6_1 = new Option("Accura II 2000/2400/1500 Aktiv ", "Accura II 2000/2400/1500 Aktiv");
+	data_6_6_2 = new Option("Accura II 2000/3000/1500 Aktiv ", "Accura II 2000/3000/1500 Aktiv");
+	data_6_6_3 = new Option("Accura II 2000/4200/1500 Aktiv ", "Accura II 2000/4200/1500 Aktiv");
+	data_7_1_1 = new Option("Prismo Navigator 700/900/500", "Prismo Navigator 700/900/500");
+	data_7_1_2 = new Option("Prismo Navigator 900/1200/700", "Prismo Navigator 900/1200/700");
+	data_7_1_3 = new Option("Prismo Navigator 900/1500/700", "Prismo Navigator 900/1500/700");
+	data_7_1_4 = new Option("Prismo Navigator 900/1800/700", "Prismo Navigator 900/1800/700");
+	data_7_1_5 = new Option("Prismo Navigator 900/2400/700", " Prismo Navigator 900/1800/700");	
+	data_8_1_1 = new Option("Prismo Navigator 1200/1800/1000", "Prismo Navigator 1200/1800/1000");
+	data_8_1_2 = new Option("Prismo Navigator 1200/2400/1000", "Prismo Navigator 1200/2400/1000");
+	data_8_1_3 = new Option("Prismo Navigator 1200/3000/1000", "Prismo Navigator 1200/3000/1000");
+	data_8_1_4 = new Option("Prismo Navigator 1200/4200/1000", "Prismo Navigator 1200/4200/1000");
+	data_8_1_5 = new Option("Prismo Navigator 1600/2400/1000", "Prismo Navigator 1600/2400/1000");
+	data_8_1_6 = new Option("Prismo Navigator 1600/3000/1000", "Prismo Navigator 1600/3000/1000");
+	data_8_1_7 = new Option("Prismo Navigator 1600/4200/1000", "Prismo Navigator 1600/4200/1000");	
+	data_9_1_1 = new Option("Prismo Navigator 900/1300/700 - Ultra", "Prismo Navigator 900/1300/700 - Ultra");
+	data_9_1_2 = new Option("Prismo Navigator 1200/1800/1000 - Ultra", "Prismo Navigator 1200/1800/1000 - Ultra");
+	data_9_1_3 = new Option("Prismo Navigator 1200/2400/1000 - Ultra", "Prismo Navigator 1200/2400/1000 - Ultra");
+	data_9_1_4 = new Option("Prismo Navigator 1600/2400/1000 - Ultra", "Prismo Navigator 1600/2400/1000 - Ultra");
+	data_9_1_5 = new Option("Prismo Navigator 1600/3000/1000 - Ultra", "Prismo Navigator 1600/3000/1000 - Ultra"); 
+    data_10_1_1 = new Option("CenterMax Navigator 11/12/9", "CenterMax Navigator 11/12/9");
+    data_10_1_2 = new Option("CenterMax Navigator 11/12/7 Ultra", "CenterMax Navigator 11/12/7 Ultra");  
+    data_11_1_1 = new Option("GageMax - Navigator", "GageMax - Navigator");
+    data_11_1_2 = new Option("GageMax - Navigator with preparation for RT", "GageMax - Navigator with preparation for RT");
+	// COMMENTED OUT FARO - 6 Axis OPTION PER RYAN/TED AND RENUMBERED THROUGH 12_1_# instead of 12_2_# *CHT 6/15/11      
+	//    data_12_1_1 = new Option("FARO - Platinum Arm 6 axis - 1.8m (6 ft.)", "FARO - Platinum Arm 6 axis - 1.8m (6 ft.)");
+	//    data_12_1_2 = new Option("FARO - Platinum Arm 6 axis - 2.4m (8 ft.)", "FARO - Platinum Arm 6 axis - 2.4m (8 ft.)");
+	//    data_12_1_3 = new Option("FARO - Platinum Arm 6 axis - 3.0m (10 ft.)", "FARO - Platinum Arm 6 axis - 3.0m (10 ft.)");
+	//    data_12_1_4 = new Option("FARO - Platinum Arm 6 axis - 3.7m (12 ft.)", "FARO - Platinum Arm 6 axis - 3.7m (12 ft.)");
+    data_12_1_1 = new Option("FARO - Platinum Arm 7 axis - 1.8m (6 ft.)", "FARO - Platinum Arm 7 axis - 1.8m (6 ft.)");
+    data_12_1_2 = new Option("FARO - Platinum Arm 7 axis - 2.4m (8 ft.)", "FARO - Platinum Arm 7 axis - 2.4m (8 ft.)");
+    data_12_1_3 = new Option("FARO - Platinum Arm 7 axis - 3.0m (10 ft.)", "FARO - Platinum Arm 7 axis - 3.0m (10 ft.)");
+    data_12_1_4 = new Option("FARO - Platinum Arm 7 axis - 3.7m (12 ft.)", "FARO - Platinum Arm 7 axis - 3.7m (12 ft.)");
+    data_13_1_1 = new Option("Spectrum II - Direkt XDT 700/700/600", "Spectrum II - Direkt XDT 700/700/600");
+    data_13_1_2 = new Option("Spectrum II - Direkt XDT 700/1000/600", "Spectrum II - Direkt XDT 700/1000/600");    
+    data_14_1_1 = new Option("Spectrum II - RDS TP20 700/700/600", "Spectrum II - RDS TP20 700/700/600");
+    data_14_1_2 = new Option("Spectrum II - RDS TP20 700/1000/600", "Spectrum II - RDS TP20 700/1000/600");    
+    data_15_1_1 = new Option("Spectrum II - RDS XDT 700/700/600", "Spectrum II - RDS XDT 700/700/600");
+    data_15_1_2 = new Option("Spectrum II - RDS XDT 700/1000/600", "Spectrum II - RDS XDT 700/1000/600");    
+    data_16_1_1 = new Option("Micura 500/500/500 VAST XT", "Micura 500/500/500 VAST XT");  
+    data_16_1_2 = new Option("Micura 500/500/500 VAST XTR", "Micura 500/500/500 VAST XTR");    
+    data_17_1_1 = new Option("O-Inspect 322", "O-Inspect 322")
+    data_17_1_2 = new Option("O-Inspect 442", "O-Inspect 442")  
+
+	// other parameters
+    displaywhenempty=""
+    valuewhenempty=-1
+
+    displaywhennotempty="-select-"
+    valuewhennotempty=0
+
+	function change(currentbox) {
+		numb = currentbox.id.split("_");
+		currentbox = numb[1];
+
+    	i=parseInt(currentbox)+1
+
+// I empty all combo boxes following the current one
+
+    while ((eval("typeof(document.getElementById(\"combo_"+i+"\"))!='undefined'")) &&
+           (document.getElementById("combo_"+i)!=null)) {
+         son = document.getElementById("combo_"+i);
+	     // I empty all options except the first one (it isn't allowed)
+	     for (m=son.options.length-1;m>0;m--) son.options[m]=null;
+	     // I reset the first option
+	     son.options[0]=new Option(displaywhenempty,valuewhenempty)
+	     i=i+1
+    }
+
+
+// now I create the string with the "base" name ("stringa"), ie. "data_1_0"
+// to which I'll add _0,_1,_2,_3 etc to obtain the name of the combo box to fill
+
+    stringa='data'
+    i=0
+    while ((eval("typeof(document.getElementById(\"combo_"+i+"\"))!='undefined'")) &&
+           (document.getElementById("combo_"+i)!=null)) {
+           eval("stringa=stringa+'_'+document.getElementById(\"combo_"+i+"\").selectedIndex")
+           if (i==currentbox) break;
+           i=i+1
+    }
+
+
+// filling the "son" combo (if exists)
+
+    following=parseInt(currentbox)+1
+
+    if ((eval("typeof(document.getElementById(\"combo_"+following+"\"))!='undefined'")) &&
+       (document.getElementById("combo_"+following)!=null)) {
+       son = document.getElementById("combo_"+following);
+       stringa=stringa+"_"
+       i=0
+       while ((eval("typeof("+stringa+i+")!='undefined'")) || (i==0)) {
+
+       // if there are no options, I empty the first option of the "son" combo
+	   // otherwise I put "-select-" in it
+
+	   	  if ((i==0) && eval("typeof("+stringa+"0)=='undefined'"))
+	   	      if (eval("typeof("+stringa+"1)=='undefined'"))
+	   	         eval("son.options[0]=new Option(displaywhenempty,valuewhenempty)")
+	   	      else
+	             eval("son.options[0]=new Option(displaywhennotempty,valuewhennotempty)")
+	      else
+              eval("son.options["+i+"]=new Option("+stringa+i+".text,"+stringa+i+".value)")
+	      i=i+1
+	   }
+       //son.focus()
+       i=1
+       combostatus=''
+       cstatus=stringa.split("_")
+       while (cstatus[i]!=null) {
+          combostatus=combostatus+cstatus[i]
+          i=i+1
+          }
+       return combostatus;
+    }
+}
+//ENDS SECTION FOR COMBO DROP DOWN BOXES
+
+
+	
+//SELECT ALL BUTTON
+function selectAll(myCustomTextArea) {
+	var tempval=eval(document.myform.myCustomTextArea)
+	tempval.focus()
+	tempval.select()
+	}	
+	
+//MAKES POP UP WINDOW FOR QLS INFO
+function openQLSwindow(url){  //PASSES URL FROM A HREF IN HTML SECTION
+	QLSwindow=window.open(url,'name','height=500,width=500');  //OPENS NEW 500x500 WINDOW
+    if (window.focus) {QLSwindow.focus()}  //MAKES THE WINDOW THE FRONT FOCUS
+	}
+
+//MAKES POP UP WINDOW HTML FILES
+function openHTMLwindow(url){  //PASSES URL FROM A HREF IN HTML SECTION
+	HTMLwindow=window.open(url,'name3', 'height=800, width=500,scrollbars=yes');  //OPENS NEW WINDOW
+    if (window.focus) {HTMLwindow.focus()}  //MAKES THE WINDOW THE FRONT FOCUS
+	}
+	
+//MAKES POP UP WINDOW FOR IMAGES, REUSED FOR ALL IMAGE POP UPS
+function openImage(url){ 
+	image=window.open(url,'name2','height=300,width=300');
+	if (window.focus) {image.focus()}
+	}	
+
+	
+function submitButton() {
+	
+	// Shortcut to your form
+	var frm = document.myform; 
+	
+	// Error handling
+	var err = 0; // Error indicator
+	var msg = ""; // Error message placeholder
+	
+	/* 
+	Start by declaring all of your local variables
+	By setting defaults, you don't need all of those else statements
+	later on in the code. This improves readability. You can concatenate all of your
+	var statements into one line, but I find that reduces readability for a very minimal
+	performance gain.
+	*/ 
+	
+	var salesman = ""; 
+	var opportunity = ""; 
+	var quoteDate = "";
+	var QLS = ""; 
+	var orderDate = "";
+	var includedCAD = "";
+	var CAD = "";
+	var CADlist = "";
+	var software = "";
+	var softwareList = "";   
+	var advanced = "";
+	var powerUser = "";
+	var curve = "";
+	var freeForm = "";
+	var PCM = "";
+	var gearProBevel = "";
+	var gearProInvolute = "";
+	var bladePro = "";
+	var accessory = "";
+	var accessoryList = "";   
+	var MSR = "";
+	var MSRlist = "";   
+	var includeVASTsockets = "";
+	var optionVASTsockets = "";
+	var includeVASTplates = "";
+	var optionVASTplates = "";
+	var includeXXTsockets = "";
+	var optionXXTsockets = "";
+	var includeXXTplates = "";
+	var optionXXTplates = "";
+
+         //VALIDATES THE REQUIRED FIELDS AND THROWS AN ERROR MESSAGE
+         if ((frm.salesman.value == "SELECT") || 
+         	(frm.opportunityTextbox.value == "") || 
+         	(frm.quoteDate.value == "SELECT") || 
+         	(frm.QLS.value == "SELECT") ||
+         	(frm.orderDate.value == "SELECT") ||
+         	(frm.combo_0.value == "no answer") ||
+         	(frm.combo_1.value == "0") ||
+         	(frm.combo_2.value == "-1") ||
+         	(frm.combo_2.value == "0")){
+        	alert ("Please check required fields and re-submit.");	
+        	err = 1; 
+         }
+         
+	// If there are no errors found, proceed
+	if(err === 0){
+	
+         //LOOPS THROUGH THE includedCAD RADIO BUTTONS AND SETS includedCAD VAR
+         var includedCAD;
+         for (i=0; i<frm.includedCAD.length; i++) {
+            if (frm.includedCAD[i].checked==true) {
+               	includedCAD = frm.includedCAD[i].value
+            }
+         }
+         //CAD OPTIONS
+         var CAD;
+         var CADlist = "";   
+         for (i=0; i<frm.CAD.length; i++) {
+         		if (frm.CAD[i].checked==true) {
+         			CADlist += frm.CAD[i].value + "\n";
+         		} 
+         	}
+         //SOFTWARE OPTIONS
+         var software;
+         var softwareList = "";   
+         for (i=0; i<frm.software.length; i++) {
+         		if (frm.software[i].checked==true) {
+         			softwareList += frm.software[i].value + "\n";
+         		} 
+         	}
+         //VALIDATES AND SETS TRAINING CREDIT VALUES
+         if (frm.basic.value != "SELECT") {
+         	basic = frm.basic.value + "\n";
+         }
+         else {
+         	basic = ""
+         }	
+         if (frm.advanced.value != "SELECT") {
+         	advanced = frm.advanced.value + "\n";
+         }
+         else {
+         	advanced = ""
+         }	
+         if (frm.powerUser.value != "SELECT") {
+         	powerUser = frm.powerUser.value + "\n";
+         }
+         else {
+         	powerUser= ""
+         }	
+         if (frm.curve.value != "SELECT") {
+         	curve = frm.curve.value + "\n";
+         }
+         else {
+         	curve= ""
+         }	
+         if (frm.freeForm.value != "SELECT") {
+         	freeForm = frm.freeForm.value + "\n";
+         }
+         else {
+         	freeForm= ""
+         }	
+         if (frm.PCM.value != "SELECT") {
+         	PCM = frm.PCM.value + "\n";
+         }
+         else {
+         	PCM= ""
+         }	
+		 if (frm.gearProBevel.value != "SELECT") {
+         	gearProBevel = frm.gearProBevel.value + "\n";
+         }
+         else {
+         	gearProBevel= ""
+         }	
+         if (frm.gearProInvolute.value != "SELECT") {
+         	gearProInvolute = frm.gearProInvolute.value + "\n";
+         }
+         else {
+         	gearProInvolute= ""
+         }	
+         if (frm.bladePro.value != "SELECT") {
+         	bladePro = frm.bladePro.value + "\n";
+         }
+         else {
+         	bladePro= ""
+         }	 
+         //ACCESSORY OPTIONS
+         var accessory;
+         var accessoryList = "";   
+         for (i=0; i<frm.accessory.length; i++) {
+         		if (frm.accessory[i].checked==true) {
+         			accessoryList += frm.accessory[i].value + "\n";
+         		} 
+         	}
+         //MSR CHECKBOXES
+         var MSR;
+         var MSRlist = "";   
+         for (i=0; i<frm.MSR.length; i++) {
+         		if (frm.MSR[i].checked==true) {
+         			MSRlist += frm.MSR[i].value + "\n";
+         		} 
+         	}
+         //VAST PROBE SOCKET DROP DOWNS
+         if (frm.includeVASTsockets.value != "SELECT") {
+         	includeVASTsockets = frm.includeVASTsockets.value + "\n";
+         }
+         else {
+         	includeVASTsockets= ""
+         }	
+         if (frm.optionVASTsockets.value != "SELECT") {
+         	optionVASTsockets = frm.optionVASTsockets.value + "\n";
+         }
+         else {
+         	optionVASTsockets= ""
+         }	
+         //VAST ADAPTER PLATE DROP DOWNS
+         if (frm.includeVASTplates.value != "SELECT") {
+         	includeVASTplates = frm.includeVASTplates.value + "\n";
+         }
+         else {
+         	includeVASTplates= ""
+         }	
+         if (frm.optionVASTplates.value != "SELECT") {
+         	optionVASTplates = frm.optionVASTplates.value + "\n";
+         }
+         else {
+         	optionVASTplates= ""
+         }	
+         //XXT PROBE SOCKET DROP DOWNS
+         if (frm.includeXXTsockets.value != "SELECT") {
+         	includeXXTsockets = frm.includeXXTsockets.value + "\n";
+         }
+         else {
+         	includeXXTsockets= ""
+         }	
+         if (frm.optionXXTsockets.value != "SELECT") {
+         	optionXXTsockets = frm.optionXXTsockets.value + "\n";
+         }
+         else {
+         	optionXXTsockets= ""
+         }	         
+         //XXT ADAPTER PLATE DROP DOWNS
+         if (frm.includeXXTplates.value != "SELECT") {
+         	includeXXTplates = frm.includeXXTplates.value + "\n";
+         }
+         else {
+         	includeXXTplates= ""
+         }	
+         if (frm.optionXXTplates.value != "SELECT") {
+         	optionXXTplates = frm.optionXXTplates.value + "\n";
+         }
+         else {
+         	optionXXTplates= ""
+         }	
+         //TESTS IF COMMENTS TEXT AREA IS BLANK
+         if (frm.commentsTextArea.value != "") {
+         	commentsTextArea = "Comments: " + frm.commentsTextArea.value;
+         }
+         else {
+         	commentsTextArea = ""
+         }	
+         
+    	 //FILLS IN THE myCustomTextArea WITH ALL THE CHOSEN DATA
+    	 document.getElementById("myCustomTextArea").value = 
+    	 frm.salesman.value + "\n" + 
+    	 frm.opportunityTextbox.value + "\n" + 
+    	 frm.quoteDate.value + "\n" + 
+    	 frm.QLS.value + "\n" + 
+    	 frm.orderDate.value + "\n" + "\n" + 
+    	 frm.combo_0.value + "\n" +
+    	 frm.combo_1.value + "\n" +
+    	 frm.combo_2.value + "\n" +  "\n" +
+    	 includeVASTplates +
+    	 includeXXTplates +
+    	 includedCAD + "\n" +
+    	 CADlist +
+    	 softwareList +
+	     accessoryList +
+    	 MSRlist +
+    	 includeVASTsockets +
+    	 includeXXTsockets +
+    	 optionVASTsockets +
+    	 optionVASTplates +
+    	 optionXXTsockets +
+    	 optionXXTplates + "\n" +
+    	 basic + advanced + powerUser + curve + freeForm + PCM + gearProBevel + gearProInvolute + bladePro + "\n" +
+    	 commentsTextArea
+    	 ;
+		
+		//frm.submit();
+	}
+}
+</script>
+<p>
+	<style type="text/css">
+/* USING CSS TO DEFINE LINK COLORS */
+	a:link {color:blue;}      /* UNVISITED LINK */
+	a:visited {color:blue;}   /* VISITED LINK */	</style>
+</p>
+<p><span style="color:blue; font-weight: bold; font-size:150%">FOR ETSE SALESMEN ONLY</span></p>
+<p><span style="color:red">* </span>Indicates required field</p>
+<p><a href="javascript:openImage ('http://ellisontechnologies.com/sites/default/files/ETSE%20Zeiss%20images%20TN%20cup.jpg');">Blue</a> Indicates link to more information or images</p>
+<form name="myform">
+	<!--SALESMAN DROP DOWN-->
+	<p><span style="color:red">* </span>Salesman:<select name="salesman"> <!-- USING SPAN RED FOR RED * --><option value="SELECT">SELECT</option><option value="agodwin@ellisontechnologies.com
+		704-774-7540">Alan G</option><option value="bbraun@ellisontechnologies.com
+		205-410-5956">
+		Ben B</option><option value="dwalker@ellisontechnologies.com
+		704-545-7362">Dallas W</option>
+		Joe R</optios><option value="jryan@ellisontechnologies.com
+		704-280-0112">Joe R</option>
+		<option value="jhartzell@ellisontechnologies.com
+		864-979-6010">John H</option><option value="mbarello@ellisontechnologies.com
+		410-215-1596">Mario B</option><option value="nbaker@ellisontechnologies.com
+		770-317-0508">Nigel B</option><option value="puhl@ellisontechnologies.com
+		336-404-0794">Pete U</option><option value="rforster@ellisontechnologies.com
+		803-315-1694">Rob F</option><option value="rob.johnson@ellisontechnologies.com
+		865-250-0381">Rob J</option><option value="smckenzie@ellisontechnologies.com
+		704-651-8088">Scott M</option><option value="tghilardi@ellisontechnologies.com
+		251-401-2307">Tony G</option><option value="zlentz@ellisontechnologies.com
+		704-778-8180">Zac L</option>
+		</select></p>
+	<!--OPPORTUNITY TEXT BOX-->
+	<p><span style="color:red">* </span>Enter opportunity name from Salesforce</p>
+	<p><input name="opportunityTextbox" size="70" type="text" value="" /></p>
+	<!--QUOTE NEEDED IN ? DAYS DROP DOWN-->
+	<p><span style="color:red">* </span>Quote needed in: <select name="quoteDate">
+		<option value="SELECT">SELECT</option>
+		<option value="Quote needed in 1 day">1 day</option>
+		<option value="Quote needed in 2 days">2 days</option>
+		<option value="Quote needed in 3 days">3 days</option>
+		<option value="Quote needed in 4 days">4 days</option>
+		</select></p>
+	<!--QLS DROP DOWN-->
+	<p><span style="color:red">* </span><a href="javascript:openQLSwindow('http://quotes.zeissmetrology.com/productcart/pc/qls.html');">Quality of Lead Score (QLS)</a> is required by Zeiss. 
+		<select name="QLS">
+			<option value="SELECT">SELECT</option>
+			<option value="QLS-5">QLS-5</option>
+			<option value="QLS-6">QLS-6</option>
+			<option value="QLS-7">QLS-7</option>
+			<option value="QLS-8">QLS-8</option>
+			<option value="QLS-9">QLS-9</option>
+			</select></p>
+	<!--ORDER DATE DROP DOWN-->
+	<p><span style="color:red">* </span>Estimated order date: 
+		<select name="orderDate">
+			<option value="SELECT">SELECT</option>
+			<option value="order date - 11/2013">11/2013</option>
+			<option value="order date - 12/2013">12/2013</option>
+			<option value="order date - 01/2014">01/2014</option>
+			<option value="order date - 02/2014">02/2014</option>
+			<option value="order date - 03/2014">03/2014</option>
+			<option value="order date - 04/2014">04/2014</option>
+			<option value="order date - 05/2014">05/2014</option>
+			<option value="order date - 06/2014">06/2014</option>
+			<option value="order date - 07/2014">07/2014</option>
+			<option value="order date - 08/2014">08/2014</option>
+			<option value="order date - 09/2014">09/2014</option>
+			<option value="order date - 10/2014">10/2014</option>
+			<option value="order date - 11/2014">11/2014</option>
+			<option value="order date - 12/2014">12/2014</option>
+			<option value="order date - 01/2015">01/2015</option>
+			<option value="order date - 02/2015">02/2015</option>
+			<option value="order date - 03/2015">03/2015</option>
+			<option value="order date - 04/2015">04/2015</option>
+			<option value="order date - 05/2015">05/2015</option>
+			<option value="order date - 06/2015">06/2015</option>
+			<option value="order date - 07/2015">07/2015</option>
+			<option value="order date - 08/2015">08/2015</option>
+			<option value="order date - 09/2015">09/2015</option>
+			<option value="order date - 10/2015">10/2015</option>
+			<option value="order date - 11/2015">11/2015</option>
+			<option value="order date - 12/2015">12/2015</option>
+			</select></p>
+	<!-- START SECTION FOR MACHINE TYPE DROP DOWN -->
+	<p><span style="color:red">* </span>Machine details - all three drop downs are required.</p>
+	<p><select id="combo_0" name="combo0" onchange="change(this);" size="1" style="width:345;height:19">
+		<option value="no answer">Select make</option>
+		<option value="DuraMax">DuraMax</option>
+		<option value="Contura G2 - Direkt">Contura G2 - Direkt</option>
+		<option value="Contura G2 - RDS">Contura G2 - RDS</option>
+		<option value="Contura G2 - Aktiv">Contura G2 - Aktiv</option>
+		<option value="Contura G2 - Navigator">Contura G2 - Navigator</option>
+		<option value="Accura II">Accura II</option>
+		<option value="Prismo Navigator 5 &amp; 7">Prismo Navigator 5 &amp; 7</option>
+		<option value="Prismo Navigator 10 - HTG">Prismo Navigator 10</option>
+		<option value="Prismo Navigator 10 S-ACC">Prismo Navigator Ultra</option>
+		<option value="CenterMax">CenterMax</option><option value="GageMax">GageMax</option>
+		<option value="FaroArm">FaroArm</option>
+		<option value="Spectrum II - Direkt XDT">Spectrum II - Direkt XDT</option>
+		<option value="Spectrum II - RDS TP20">Spectrum II - RDS TP20</option>
+		<option value="Spectrum II - RDS XDT">Spectrum II - RDS XDT</option>
+		<option value="Micura">Micura</option>
+		<option value="O-Inspect">O-Inspect</option>
+		</select> 
+		<select id="combo_1" name="combo1" onchange="change(this)" size="1" style="width:346;height:19">
+			<option value="value1">Select model</option>
+			</select>
+			<select id="combo_2" name="combo2" onchange="change(this);" size="1" style="width:346;height:19">
+				<option value="value1">Select table size</option>
+				</select></p>
+	<!-- END SECTION FOR MACHINE TYPE DROP DOWN --><!--INCLUDED CAD RADIO BUTTONS-->
+	<!-- DURAMAX DESCRIPTIONS LINK-->
+	<p><a href="javascript:openHTMLwindow('http://ellisontechnologies.com/sites/default/files/ETSE%20Zeiss%20DuraMax%20Descriptions.html');">Click here</a><span style="color:red"> for descriptions of different DuraMax packages.</span></p>	
+	<p>One CAD option is always included. STEP is included. 
+		<input checked="checked" name="includedCAD" type="radio" value="include STEP" />STEP 
+		<input name="includedCAD" type="radio" value="include IGES" />IGES 
+		<input name="includedCAD" type="radio" value="include VDA" />VDA</p>
+	<!--CAD OPTIONS CHECKBOXES-->
+	<p>CAD options can be included in the body of the quote or as separate options. 
+		<input name="CAD" type="checkbox" value="$6055 include Unigraphics" />include <input name="CAD" type="checkbox" value="$6055 option Unigraphics" />option Unigraphics 
+		<input name="CAD" type="checkbox" value="$6055 include CATIA V5" />include <input name="CAD" type="checkbox" value="$6055 option CATIA V5" />option CATIA V5 
+		<input name="CAD" type="checkbox" value="$6055 include Pro-E" />include <input name="CAD" type="checkbox" value="$6055 option Pro-E" />option Pro-E 
+		<input name="CAD" type="checkbox" value="$6055 include SolidWorks" />include <input name="CAD" type="checkbox" value="$6055 option SolidWorks" />option SolidWorks 
+		<input name="CAD" type="checkbox" value="$3283 include STEP" />include <input name="CAD" type="checkbox" value="$3283 option STEP" />option STEP 
+		<input name="CAD" type="checkbox" value="$3283 include IGES" />include <input name="CAD" type="checkbox" value="$3283 option IGES" />option IGES 
+		<input name="CAD" type="checkbox" value="$3283 include VDA" />include <input name="CAD" type="checkbox" value="$3283 option VDA" />option VDA</p>
+	<!--SOFTWARE OPTIONS CHECKBOXES-->
+	<p>Software options can be included in the body of the quote or as separate itemized options. 
+		<input name="software" type="checkbox" value="$6391 include Curve" />include <input name="software" type="checkbox" value="$6391 option Curve" />option Curve 
+		<input name="software" type="checkbox" value="$4416 include Free Form" />include <input name="software" type="checkbox" value="$4416 option Free Form" />option Free Form 
+		<input name="software" type="checkbox" value="$6769 include PCM" />include <input name="software" type="checkbox" value="$6769 option PCM" />option PCM 
+		<input name="software" type="checkbox" value="$20,011 include GearPro Bevel" />include <input name="software" type="checkbox" value="$20,011 option GearPro Bevel" />option GearPro Bevel 
+		<input name="software" type="checkbox" value="$12,550 include GearPro Involute" />include <input name="software" type="checkbox" value="$12,550 option GearPro Involute" />option GearPro Involute 
+		<input name="software" type="checkbox" value="$14,112 include BladePro" />include <input name="software" type="checkbox" value="$14,112 option BladePro" />option BladePro</p>
+	<!--TRAINING DROP DOWNS-->
+	<p>Training credits are always an option and NOT included in the main quote. For the most current class schedule, seat availability, and online registration, visit the <a href="http://www.ellisontechnologies.com/parts-service/training" target="_blank">training website.</a></p>
+	Programming I (Basic)
+	<select name="basic"><option value="SELECT">SELECT</option>
+		<option selected="selected" value="$1750 option 1 basic training credit">1</option>
+		<option value="$3500 option 2 basic training credits">2</option>
+		<option value="$5250 option 3 basic training credits">3</option>
+		<option value="$7000 option 4 basic training credits">4</option>
+		<option value="$8750 option 5 basic training credits">5</option>
+		<option value="$10,500 option 6 basic training credits">6</option>
+		</select> 
+	Programming II (Advanced)
+	<select name="advanced"><option value="SELECT">SELECT</option>
+		<option selected="selected" value="$1750 option 1 advanced training credit">1</option>
+		<option value="$3500 option 2 advanced training credits">2</option>
+		<option value="$5250 option 3 advanced training credits">3</option>		
+		<option value="$7000 option 4 advanced training credits">4</option>
+		<option value="$8750 option 5 advanced training credits">5</option>
+		<option value="$10,500 option 6 advanced training credits">6</option>
+		</select> 
+	Programming III (Power User)
+		<select name="powerUser"><option value="SELECT">SELECT</option>
+		<option value="$1750 option 1 advanced training credit">1</option>
+		<option value="$3500 option 2 Power User training credits">2</option>
+		<option value="$5250 option 3 Power User training credits">3</option>
+		<option value="$7000 option 4 Power User training credits">4</option>
+		<option value="$8750 option 5 Power User training credits">5</option>
+		<option value="$10,500 option 6 Power User training credits">6</option>
+		</select> 
+	Curve<select name="curve">
+		<option value="SELECT">SELECT</option>	
+		<option value="$1050 option 1 Curve training credit">1</option>
+		<option value="$2100 option 2 Curve training credits">2</option>
+		<option value="$3150 option 3 Curve training credits">3</option>
+		<option value="$4200 option 4 Curve training credits">4</option>
+		<option value="$5250 option 5 Curve training credits">5</option>
+		<option value="$6300 option 6 Curve training credits">6</option>
+		</select> 
+	Free Form<select name="freeForm">
+		<option value="SELECT">SELECT</option>
+		<option value="$1050 option 1 Free Form training credit">1</option>
+		<option value="$2100 option 2 Free Form training credits">2</option>
+		<option value="$3150 option 3 Free Form training credits">3</option>
+		<option value="$4200 option 4 Free Form training credits">4</option>
+		<option value="$5250 option 5 Free Form training credits">5</option>
+		<option value="$6300 option 6 Free Form training credits">6</option>
+		</select> 
+	PCM<select name="PCM">
+		<option value="SELECT">SELECT</option>
+		<option value="$1050 option 1 PCM training credit">1</option>
+		<option value="$2100 option 2 PCM training credits">2</option>
+		<option value="$3150 option 3 PCM training credits">3</option>
+		<option value="$4200 option 4 PCM training credits">4</option>
+		<option value="$5250 option 5 PCM training credits">5</option>
+		<option value="$6300 option 6 PCM training credits">6</option></select> 
+	GearPro - Bevel
+		<select name="gearProBevel"><option value="SELECT">SELECT</option>
+		<option value="$1750 option 1 GearPro Bevel training credit">1</option>		
+		<option value="$3500 option 2 GearPro Bevel training credits">2</option>
+		<option value="$5250 option 3 GearPro Bevel training credits">3</option>
+		<option value="$7000 option 4 GearPro Bevel training credits">4</option>
+		<option value="$8750 option 5 GearPro Bevel training credits">5</option>
+		<option value="$10,500 option 6 GearPro Bevel training credits">6</option>
+		</select> 
+	GearPro - Involute
+		<select name="gearProInvolute"><option value="SELECT">SELECT</option>
+		<option value="$1750 option 1 GearPro Involute training credit">1</option>
+		<option value="$3500 option 2 GearPro Involute training credits">2</option>
+		<option value="$5250 option 3 GearPro Involute training credits">3</option>
+		<option value="$7000 option 4 GearPro Involute training credits">4</option>
+		<option value="$8750 option 5 GearPro Involute training credits">5</option>
+		<option value="$10,500 option 6 GearPro Involute training credits">6</option>
+		</select> 				
+	BladePro
+		<select name="bladePro"><option value="SELECT">SELECT</option>
+		<option value="$1750 option 1 BladePro training credit">1</option>
+		<option value="$3500 option 2 BladePro training credits">2</option>
+		<option value="$5250 option 3 BladePro training credits">3</option>
+		<option value="$7000 option 4 BladePro training credits">4</option>
+		<option value="$8750 option 5 BladePro training credits">5</option>
+		<option value="$10,500 option 6 BladePro training credits">6</option>
+		</select> 						
+<!--ACCESSORY OPTIONS CHECKBOXES-->
+	<p><span style="font-weight: bold; font-size:125%">Accessories / Sensor Upgrades</span> (included in the body of the quote or as separate itemized options) 
+		<input checked="checked" name="accessory" type="checkbox" value="$1295 include Power PC" />include <input name="accessory" type="checkbox" value="$1295 option Power PC" />option Power PC 
+		<input checked="checked" name="accessory" type="checkbox" value="$1494 include refrigerated air dryer" />include <input name="accessory" type="checkbox" value="$1494 option refrigerated air dryer" />option refrigerated air dryer 
+		<input checked="checked" name="accessory" type="checkbox" value="$750 include table" />include <input name="accessory" type="checkbox" value="$750 option table" />option table 
+		<input name="accessory" type="checkbox" value="$xxxx include HTG" />include	<input name="accessory" type="checkbox" value="$xxxx option HTG" />option HTG 
+		<input name="accessory" type="checkbox" value="$4032 include DuraMax shop floor base" />include <input name="accessory" type="checkbox" value="$4032 option DuraMax shop floor base" />option DuraMax shop floor base 
+		<input name="accessory" type="checkbox" value="$3032 include O-Inspect 322 shop floor base" />include <input name="accessory" type="checkbox" value="$3032 option O-Inspect 322 shop floor base" />option O-Inspect 322 shop floor base 
+		<input name="accessory" type="checkbox" value="$xxxx include upgrade to XTR sensor" />include <input name="accessory" type="checkbox" value="$xxxx option upgrade to XTR sensor" />option upgrade to XTR sensor 
+<!--ROTARY TABLE OPTIONS OPTIONS--></p>
+	<p><span style="font-weight: bold; font-size:125%">Rotary Table Options</span></p>
+	<input name="accessory" type="checkbox" value="$58,780 include RT1-400 (16in) rotary table surface mount" />include <input name="accessory" type="checkbox" value="$58,780 option RT1-400 (16in) rotary table surface mount" />option 16&quot; rotary table surface mount (Accura II only) 
+	<input name="accessory" type="checkbox" value="$60,030 include RT1-630 (25in) rotary table surface mount" />include <input name="accessory" type="checkbox" value="$60,030 option RT1-630 (25in) rotary table surface mount" />option 25&quot; rotary table surface mount (Accura II only) 
+	<input name="accessory" type="checkbox" value="$58,780 include RT1-400 (16in) rotary table integrated" />include <input name="accessory" type="checkbox" value="$58,780 option RT1-400 (16in) rotary table integrated" />option 16&quot; rotary table integrated (Prismo only) 
+	<input name="accessory" type="checkbox" value="$60,030 include RT1-630 (25in) rotary table integrated" />include <input name="accessory" type="checkbox" value="$60,030 option RT1-630 (25in) rotary table integrated" />option 25&quot; rotary table integrated (Prismo only) 
+	<input name="accessory" type="checkbox" value="$438 include clamp kit for rotary table" />include <input name="accessory" type="checkbox" value="$438 option clamp kit for rotary table" />option clamp kit for rotary table 
+	<input name="accessory" type="checkbox" value="$1411 include 36mm three jaw quick chuck" />include <input name="accessory" type="checkbox" value="$1411 option 36mm three jaw quick chuck" />option 36mm three jaw quick chuck 
+	<input name="accessory" type="checkbox" value="$3510 include 50mm three jaw quick chuck" />include <input name="accessory" type="checkbox" value="$3510 option 50mm three jaw quick chuck" />option 50mm three jaw quick chuck
+	<p>&nbsp;</p>
+	<!--RECOMMENDED SET UPS POP UP-->
+	<a href="javascript:openHTMLwindow('http://ellisontechnologies.com/sites/default/files/ETSE%20Zeiss%20Setups.html');">Click here</a><span style="color:red"> for recommendations of MSR, number of sockets, and number of adapted plates per CMM size.</span></p>
+	<!--MSR OPTIONS-->
+	<p><span style="font-weight: bold; font-size:125%">Multi Sensor Rack (MSR)</span></p>
+	<input name="MSR" type="checkbox" value="$xxxx include MSR" />include <input name="MSR" type="checkbox" value="$xxxx option MSR" />option <a href="javascript:openImage ('http://ellisontechnologies.com/sites/default/files/ETSE%20Zeiss%20images%20MSR.jpg');">MSR </a>(five or more VAST sockets) 
+	<input name="MSR" type="checkbox" value="$1063 include MSR mini" />include <input name="MSR" type="checkbox" value="$1063 option MSR Mini" />option <a href="javascript:openImage ('http://ellisontechnologies.com/sites/default/files/ETSE%20Zeiss%20images%20MSR%20mini.jpg');">MSR Mini </a> (less than 4 VAST sockets or 12 XXT sockets) 
+	<!--VAST OPTIONS-->
+	<p><span style="font-weight: bold; font-size:125%">VAST XT Gold / VAST Gold options</span></p>
+	<p>Include <a href="javascript:openImage ('http://ellisontechnologies.com/sites/default/files/ETSE%20Zeiss%20images%20vast%20socket.jpg');">VAST probe sockets</a> <select name="includeVASTsockets">
+		<option value="SELECT">SELECT</option><option value="$290 include 1 VAST probe socket">1</option>
+		<option value="$580 include 2 VAST probe sockets">2</option>
+		<option value="$870 include 3 VAST probe sockets">3</option>
+		<option value="$1160 include 4 VAST probe sockets">4</option>
+		<option value="$1450 include 5 VAST probe sockets">5</option>
+		<option value="$1740 include 6 VAST probe sockets">6</option>
+		<option value="$2030 include 7 VAST probe sockets">7</option>
+		<option value="$2320 include 8 VAST probe sockets">8</option>
+		<option value="$2610 include 9 VAST probe sockets">9</option>
+		<option value="$2900 include 10 VAST probe sockets">10</option>
+		</select></p>
+	<p>Option VAST probe sockets <select name="optionVASTsockets">
+		<option value="SELECT">SELECT</option>
+		<option value="$290 option 1 VAST probe socket">1</option>
+		<option value="$580 option 2 VAST probe sockets">2</option>
+		<option value="$870 option 3 VAST probe sockets">3</option>
+		<option value="$1160 option 4 VAST probe sockets">4</option>
+		<option value="$1450 option 5 VAST probe sockets">5</option>
+		<option value="$1740 option 6 VAST probe sockets">6</option>
+		<option value="$2030 option 7 VAST probe sockets">7</option>
+		<option value="$2320 option 8 VAST probe sockets">8</option>
+		<option value="$2610 option 9 VAST probe sockets">9</option>
+		<option value="$2900 option 10 VAST probe sockets">10</option>
+		</select></p>
+	<p>Include <a href="javascript:openImage ('http://ellisontechnologies.com/sites/default/files/ETSE%20Zeiss%20images%20vast%20plate.jpg');">VAST adapter plates</a> 
+		<select name="includeVASTplates"><option value="SELECT">SELECT</option>
+			<option value="$610 include 2 VAST adapter plates">2</option>
+			<option value="$1220 include 4 VAST adapter plates">4</option>
+			<option value="$1830 include 6 VAST adapter plates">6</option>
+			<option value="$2440 include 8 VAST adapter plates">8</option>
+			<option value="$3050 option 10 VAST adapter plates">10</option>
+			<option value="$3660 option 12 VAST adapter plates">12</option>
+			</select></p>
+	<p>Option VAST adapter plates 
+		<select name="optionVASTplates">
+			<option value="SELECT">SELECT</option>
+			<option value="$610 option 2 VAST adapter plates">2</option>
+			<option value="$1220 option 4 VAST adapter plates">4</option>
+			<option value="$1830 option 6 VAST adapter plates">6</option>
+			<option value="$2440 option 8 VAST adapter plates">8</option>
+			<option value="$3050 option 10 VAST adapter plates">10</option>
+			<option value="$3660 option 12 VAST adapter plates">12</option>
+			</select></p>
+	<!--VAST XXT OPTIONS-->
+	<p><span style="font-weight: bold; font-size:125%">VAST XXT / VAST XDT options</span></p>
+	<p>Include <a href="javascript:openImage ('http://ellisontechnologies.com/sites/default/files/ETSE%20Zeiss%20images%20xxt%20socket.jpg');">XXT probe sockets</a> 
+		<select name="includeXXTsockets"><option value="SELECT">SELECT</option>
+			<option value="$1628 include 3 XXT probe socket">3</option>
+			<option value="$3256 include 6 XXT probe sockets">6</option>
+			<option value="$4884 include 9 XXT probe sockets">9</option>
+			<option value="$6512 include 12 XXT probe sockets">12</option>
+			</select></p>
+	<p>Option XXT probe sockets 
+		<select name="optionXXTsockets"><option value="SELECT">SELECT</option><option value="$1628 option 3 XXT probe socket">3</option><option value="$3256 option 6 XXT probe sockets">6</option><option value="$4884 option 9 XXT probe sockets">9</option><option value="$6512 option 12 XXT probe sockets">12</option></select></p>
+	<p>Include <a href="javascript:openImage ('http://ellisontechnologies.com/sites/default/files/ETSE%20Zeiss%20images%20xxt%20plate.jpg');">XXT adapter plates</a> 
+		<select name="includeXXTplates"><option value="SELECT">SELECT</option>
+			<option value="$425 include 1 XXT adapter plates">1</option>
+			<option value="$850 include 2 XXT adapter plates">2</option>
+			<option value="$1275 include 3 XXT adapter plates">3</option>
+			<option value="$1700 include 4 XXT adapter plates">4</option>
+			<option value="$2125 include 5 XXT adapter plates">5</option>
+			<option value="$2550 include 6 XXT adapter plates">6</option>
+			<option value="$2975 include 7 XXT adapter plates">7</option>
+			<option value="$3400 include 8 XXT adapter plates">8</option>
+			<option value="$3825 include 9 XXT adapter plates">9</option>
+			<option value="$4250 include 10 XXT adapter plates">10</option>
+			</select></p>
+	<p>Option XXT adapter plates 
+		<select name="optionXXTplates"><option value="SELECT">SELECT</option>
+			<option value="$425 option 1 XXT adapter plates">1</option>
+			<option value="$850 option 2 XXT adapter plates">2</option>
+			<option value="$1275 option 3 XXT adapter plates">3</option>
+			<option value="$1700 option 4 XXT adapter plates">4</option>
+			<option value="$2125 option 5 XXT adapter plates">5</option>
+			<option value="$2550 option 6 XXT adapter plates">6</option>
+			<option value="$2975 option 7 XXT adapter plates">7</option>
+			<option value="$3400 option 8 XXT adapter plates">8</option><option value="$3825 option 9 XXT adapter plates">9</option><option value="$4250 option 10 XXT adapter plates">10</option></select></p>
+	<p><span style="font-weight: bold; font-size:125%">Additional comments / instructions:</span></p>
+	<!--MAKES COMMENTS TEXT AREA CALLED commentsTextArea --><textarea cols="80" id="commentsTextArea" name="commentsTextArea" rows="3"></textarea><!--MAKES SUBMIT BUTTON TO CALL FUNCTION submitButton--><!--MAKES SELECT ALL BUTTON TO CALL FUNCTION selectAll-->
+	<p><input onclick="submitButton()" return="" type="button" value="SUBMIT" /> <input onclick="selectAll(myCustomTextArea)" type="button" value="SELECT ALL" /></p>
+	<p>&nbsp;</p>
+	Copy and paste this into the Machine Options section of your Quote Request. Assign Caroline the task with email notification checked.
+	<p>&nbsp;</p>
+	<!--MAKES TEXT AREA CALLED myCustomTextArea --><textarea cols="80" id="myCustomTextArea" name="myCustomTextArea" rows="30">This is where the magic happens after you click SUBMIT. Be sure to re-click SUBMIT if you make any changes.</textarea></form>

@@ -1,0 +1,518 @@
+<script type="text/javascript">
+	
+		
+	//STARTS SECTION FOR COMBO DROP DOWN BOXES
+	// first combo box
+	data_1 = new Option("DuraMax", "DuraMax");
+	data_2 = new Option("2", "Contura G2 - Direkt");
+	data_3 = new Option("3", "Contura G2 - RDS");
+	data_4 = new Option("4", "Contura G2 - Aktiv");
+	data_5 = new Option("5", "Contura G2 - Navigator");
+	data_6 = new Option("6", "Accura II");
+	data_7 = new Option("7", "Prismo Navigator 5 & 7");
+	data_8 = new Option("8", "Prismo Navigator 10");
+	data_9 = new Option("9", "Prismo Ultra");
+	data_10 = new Option("10", "CenterMax");
+	data_11 = new Option("11", "GageMax");
+	data_12 = new Option("12", "FaroArm");	
+	data_13 = new Option("13", "Spectrum II - Direkt XDT");
+	data_14 = new Option("14", "Spectrum II - RDS TP20");
+	data_15 = new Option("15", "Spectrum II - RDS XDT");
+	data_16 = new Option("16", "Micura");
+		
+	// second combo box
+	data_1_1 = new Option("DuraMax - only choice", "DuraMax - only choice");
+	data_2_1 = new Option("Contura G2 - Direkt 1000", "Contura G2 - Direkt 1000");
+	data_2_2 = new Option("Contura G2 - Direkt 700", "Contura G2 - Direkt 700");
+	data_3_1 = new Option("Contura G2 - RDS 1000", "Contura G2 - RDS 1000");
+	data_3_2 = new Option("Contura G2 - RDS 700", "Contura G2 - RDS 700");
+	data_4_1 = new Option("Contura G2 - Aktiv 1000", "Contura G2 - Aktiv 1000");
+	data_4_2 = new Option("Contura G2 - Aktiv 700", "Contura G2 - Aktiv 700");
+	data_5_1 = new Option("Contura G2 Navigator 700 - only choice", "Contura G2 Navigator 700 - only choice");
+    data_6_1 = new Option("Accura II 10 (RDS)", "Accura II 10 (RDS)");
+    data_6_2 = new Option("Accura II 10 Aktiv", "Accura II 10 Aktiv");
+    data_6_3 = new Option("Accura II 8 (RDS)", "Accura II 8 (RDS)");
+    data_6_4 = new Option("Accura II 8 Aktiv", "Accura II 8 Aktiv");
+    data_6_5 = new Option("Accura II x=2000 (RDS)", "Accura II x=2000 (RDS)");
+    data_6_6 = new Option("Accura II x=2000 Aktiv", "Accura II x=2000 Aktiv");
+    data_7_1 = new Option("Prismo Navigator 5 & 7 - only choice", "Prismo Navigator 5 & 7 - only choice");
+    data_8_1 = new Option("Prismo Navigator 10 - only choice", "Prismo Navigator 10 - only choice");
+    data_9_1 = new Option("Prismo Navigator Ultra - only choice", "Prismo Navigator Ultra - only choice");
+    data_10_1 = new Option("CenterMax - only choice", "CenterMax - only choice");
+    data_11_1 = new Option("GageMax - only choice", "GageMax - only choice");
+	// COMMENTED OUT FARO - 6 Axis OPTION PER RYAN/TED AND RENUMBERED THROUGH 12_1 instead of 12_2 *CHT 6/15/11    
+	//    data_12_1 = new Option("FaroArm - 6 Axis", "FaroArm - 6 Axis");
+    data_12_1 = new Option("FaroArm - 7 Axis - only choice", "FaroArm - 7 Axis - only choice");
+    data_13_1 = new Option("Spectrum II - Direkt XDT - only choice", "Spectrum II - Direkt XDT - only choice");
+    data_14_1 = new Option("Spectrum II - RDS TP20 - only choice", "Spectrum II - RDS TP20 - only choice");
+    data_15_1 = new Option("Spectrum II - RDS XDT - only choice", "Spectrum II - RDS XDT - only choice");
+    data_16_1 = new Option("Micura - only choice", "Micura - only choice");
+      
+	// third combo box
+	data_1_1_1 = new Option("DuraMax 500/500/500 - only choice", "DuraMax 500/500/500 - only choice");	
+	data_2_1_1 = new Option("Contura G2 direkt 1000/1200/600", "Contura G2 direkt 1000/1200/600");
+	data_2_1_2 = new Option("Contura G2 direkt 1000/1600/600", "Contura G2 direkt 1000/1600/600");
+	data_2_1_3 = new Option("Contura G2 direkt 1000/2100/600", "Contura G2 direkt 1000/2100/600");
+	data_2_1_4 = new Option("Contura G2 direkt 1000/2100/600 U-Stone", "Contura G2 direkt 1000/2100/600 U-Stone");
+	data_2_2_1 = new Option("Contura G2 direkt 700/700/600", "Contura G2 direkt 700/700/600");
+	data_2_2_2 = new Option("Contura G2 direkt 700/1000/600", "Contura G2 direkt 700/1000/600");	
+	data_3_1_1 = new Option("Contura G2 RDS 1000/1200/600", "Contura G2 RDS 1000/1200/600");
+	data_3_1_2 = new Option("Contura G2 RDS 1000/1600/600", "Contura G2 RDS 1000/1600/600");
+	data_3_1_3 = new Option("Contura G2 RDS 1000/2100/600", "Contura G2 RDS 1000/2100/600");
+	data_3_1_4 = new Option("Contura G2 RDS 1000/1200/600 U-Stone", "Contura G2 RDS 1000/1200/600 U-Stone");
+	data_3_1_5 = new Option("Contura G2 RDS 1000/1600/600 U-Stone", "Contura G2 RDS 1000/1600/600 U-Stone");
+	data_3_1_6 = new Option("Contura G2 RDS 1000/2100/600 U-Stone", "Contura G2 RDS 1000/2100/600 U-Stone");
+	data_3_2_1 = new Option("Contura G2 RDS 700/700/600", "Contura G2 RDS 700/700/600");
+	data_3_2_2 = new Option("Contura G2 RDS 700/1000/600", "Contura G2 RDS 700/1000/600");
+	data_4_1_1 = new Option("Contura G2 AKTIV 1000/1200/600", "Contura G2 AKTIV 1000/1200/600");
+	data_4_1_2 = new Option("Contura G2 AKTIV 1000/1600/600", "Contura G2 AKTIV 1000/1600/600");
+	data_4_1_3 = new Option("Contura G2 AKTIV 1000/2100/600", "Contura G2 AKTIV 1000/2100/600");
+	data_4_1_4 = new Option("Contura G2 AKTIV 1000/1200/600 U-Stone", "Contura G2 AKTIV 1000/1200/600 U-Stone");
+	data_4_1_5 = new Option("Contura G2 AKTIV 1000/1600/600 U-Stone", "Contura G2 AKTIV 1000/1600/600 U-Stone");
+	data_4_1_6 = new Option("Contura G2 AKTIV 1000/2100/600 U-Stone", "Contura G2 AKTIV 1000/2100/600 U-Stone");
+	data_4_2_1 = new Option("Contura G2 AKTIV 700/700/600", "Contura G2 AKTIV 700/700/600");
+	data_4_2_2 = new Option("Contura G2 AKTIV 700/1000/600", "Contura G2 AKTIV 700/1000/600");	
+	data_5_1_1 = new Option("Contura G2 Navigator 700/700/600", "Contura G2 Navigator 700/700/600");
+	data_5_1_2 = new Option("Contura G2 Navigator 700/1000/600", "Contura G2 Navigator 700/1000/600");
+	data_6_1_1 = new Option("Accura II 1200/1800/1000 RDS", "Accura II 1200/1800/1000 RDS");
+	data_6_1_2 = new Option("Accura II 1200/2400/1000 RDS", "Accura II 1200/2400/1000 RDS");
+	data_6_1_3 = new Option("Accura II 1200/3000/1000 RDS", "Accura II 1200/3000/1000 RDS");
+	data_6_1_4 = new Option("Accura II 1200/4200/1000 RDS", "Accura II 1200/4200/1000 RDS");
+	data_6_2_1 = new Option("Accura II 1200/1800/1000 Aktiv", "Accura II 1200/1800/1000 Aktiv");
+	data_6_2_2 = new Option("Accura II 1200/2400/1000 Aktiv", "Accura II 1200/2400/1000 Aktiv");
+	data_6_2_3 = new Option("Accura II 1200/3000/1000 Aktiv", "Accura II 1200/3000/1000 Aktiv");
+	data_6_2_4 = new Option("Accura II 1200/4200/1000 Aktiv", "Accura II 1200/4200/1000 Aktiv");
+	data_6_3_1 = new Option("Accura II 900/1200/800 RDS", " Accura II 900/1200/800 RDS");
+	data_6_3_2 = new Option("Accura II 900/1600/800 RDS", " Accura II 900/1600/800 RDS");
+	data_6_4_1 = new Option("Accura II 900/1200/800 Aktiv", " Accura II 900/1200/800 Aktiv");
+	data_6_4_2 = new Option("Accura II 900/1600/800 Aktiv", " Accura II 900/1600/800 Aktiv");
+	data_6_5_1 = new Option("Accura II 2000/3000/1500 RDS", "Accura II 2000/3000/1500 RDS");
+	data_6_5_2 = new Option("Accura II 2000/4200/1500 RDS", "Accura II 2000/4200/1500 RDS");
+	data_6_6_1 = new Option("Accura II 2000/3000/1500 Aktiv ", "Accura II 2000/3000/1500 Aktiv");
+	data_6_6_2 = new Option("Accura II 2000/4200/1500 Aktiv ", "Accura II 2000/4200/1500 Aktiv");
+	data_7_1_1 = new Option("Prismo Navigator 700/900/500", "Prismo Navigator 700/900/500");
+	data_7_1_2 = new Option("Prismo Navigator 900/1200/700", "Prismo Navigator 900/1200/700");
+	data_7_1_3 = new Option("Prismo Navigator 900/1500/700", "Prismo Navigator 900/1500/700");
+	data_7_1_4 = new Option("Prismo Navigator 900/1800/700", "Prismo Navigator 900/1800/700");
+	data_7_1_5 = new Option("Prismo Navigator 900/2400/700", " Prismo Navigator 900/1800/700");	
+	data_8_1_1 = new Option("Prismo Navigator 1200/1800/1000", "Prismo Navigator 1200/1800/1000");
+	data_8_1_2 = new Option("Prismo Navigator 1200/2400/1000", "Prismo Navigator 1200/2400/1000");
+	data_8_1_3 = new Option("Prismo Navigator 1200/3000/1000", "Prismo Navigator 1200/3000/1000");
+	data_8_1_4 = new Option("Prismo Navigator 1200/4200/1000", "Prismo Navigator 1200/4200/1000");
+	data_8_1_5 = new Option("Prismo Navigator 1600/2400/1000", "Prismo Navigator 1600/2400/1000");
+	data_8_1_6 = new Option("Prismo Navigator 1600/3000/1000", "Prismo Navigator 1600/3000/1000");
+	data_8_1_7 = new Option("Prismo Navigator 1600/4200/1000", "Prismo Navigator 1600/4200/1000");	
+	data_9_1_1 = new Option("Prismo Navigator 900/1300/700 - Ultra", "Prismo Navigator 900/1300/700 - Ultra");
+	data_9_1_2 = new Option("Prismo Navigator 1200/1800/1000 - Ultra", "Prismo Navigator 1200/1800/1000 - Ultra");
+	data_9_1_3 = new Option("Prismo Navigator 1200/2400/1000 - Ultra", "Prismo Navigator 1200/2400/1000 - Ultra");
+	data_9_1_4 = new Option("Prismo Navigator 1600/2400/1000 - Ultra", "Prismo Navigator 1600/2400/1000 - Ultra");
+	data_9_1_5 = new Option("Prismo Navigator 1600/3000/1000 - Ultra", "Prismo Navigator 1600/3000/1000 - Ultra"); 
+    data_10_1_1 = new Option("CenterMax Navigator 11/12/9", "CenterMax Navigator 11/12/9");
+    data_10_1_2 = new Option("CenterMax Navigator 11/12/7 Ultra", "CenterMax Navigator 11/12/7 Ultra");  
+    data_11_1_1 = new Option("GageMax - Navigator", "GageMax - Navigator");
+    data_11_1_2 = new Option("GageMax - Navigator with preparation for RT", "GageMax - Navigator with preparation for RT");
+	// COMMENTED OUT FARO - 6 Axis OPTION PER RYAN/TED AND RENUMBERED THROUGH 12_1_# instead of 12_2_# *CHT 6/15/11      
+	//    data_12_1_1 = new Option("FARO - Platinum Arm 6 axis - 1.8m (6 ft.)", "FARO - Platinum Arm 6 axis - 1.8m (6 ft.)");
+	//    data_12_1_2 = new Option("FARO - Platinum Arm 6 axis - 2.4m (8 ft.)", "FARO - Platinum Arm 6 axis - 2.4m (8 ft.)");
+	//    data_12_1_3 = new Option("FARO - Platinum Arm 6 axis - 3.0m (10 ft.)", "FARO - Platinum Arm 6 axis - 3.0m (10 ft.)");
+	//    data_12_1_4 = new Option("FARO - Platinum Arm 6 axis - 3.7m (12 ft.)", "FARO - Platinum Arm 6 axis - 3.7m (12 ft.)");
+    data_12_1_1 = new Option("FARO - Platinum Arm 7 axis - 1.8m (6 ft.)", "FARO - Platinum Arm 7 axis - 1.8m (6 ft.)");
+    data_12_1_2 = new Option("FARO - Platinum Arm 7 axis - 2.4m (8 ft.)", "FARO - Platinum Arm 7 axis - 2.4m (8 ft.)");
+    data_12_1_3 = new Option("FARO - Platinum Arm 7 axis - 3.0m (10 ft.)", "FARO - Platinum Arm 7 axis - 3.0m (10 ft.)");
+    data_12_1_4 = new Option("FARO - Platinum Arm 7 axis - 3.7m (12 ft.)", "FARO - Platinum Arm 7 axis - 3.7m (12 ft.)");
+    data_13_1_1 = new Option("Spectrum II - Direkt XDT 700/700/600", "Spectrum II - Direkt XDT 700/700/600");
+    data_13_1_2 = new Option("Spectrum II - Direkt XDT 700/1000/600", "Spectrum II - Direkt XDT 700/1000/600");    
+    data_14_1_1 = new Option("Spectrum II - RDS TP20 700/700/600", "Spectrum II - RDS TP20 700/700/600");
+    data_14_1_2 = new Option("Spectrum II - RDS TP20 700/1000/600", "Spectrum II - RDS TP20 700/1000/600");    
+    data_15_1_1 = new Option("Spectrum II - RDS XDT 700/700/600", "Spectrum II - RDS XDT 700/700/600");
+    data_15_1_2 = new Option("Spectrum II - RDS XDT 700/1000/600", "Spectrum II - RDS XDT 700/1000/600");    
+    data_16_1_1 = new Option("Micura 500/500/500", "Micura 500/500/500");    
+
+	// other parameters
+    displaywhenempty=""
+    valuewhenempty=-1
+
+    displaywhennotempty="-select-"
+    valuewhennotempty=0
+
+	function change(currentbox) {
+		numb = currentbox.id.split("_");
+		currentbox = numb[1];
+
+    	i=parseInt(currentbox)+1
+
+// I empty all combo boxes following the current one
+
+    while ((eval("typeof(document.getElementById(\"combo_"+i+"\"))!='undefined'")) &&
+           (document.getElementById("combo_"+i)!=null)) {
+         son = document.getElementById("combo_"+i);
+	     // I empty all options except the first one (it isn't allowed)
+	     for (m=son.options.length-1;m>0;m--) son.options[m]=null;
+	     // I reset the first option
+	     son.options[0]=new Option(displaywhenempty,valuewhenempty)
+	     i=i+1
+    }
+
+
+// now I create the string with the "base" name ("stringa"), ie. "data_1_0"
+// to which I'll add _0,_1,_2,_3 etc to obtain the name of the combo box to fill
+
+    stringa='data'
+    i=0
+    while ((eval("typeof(document.getElementById(\"combo_"+i+"\"))!='undefined'")) &&
+           (document.getElementById("combo_"+i)!=null)) {
+           eval("stringa=stringa+'_'+document.getElementById(\"combo_"+i+"\").selectedIndex")
+           if (i==currentbox) break;
+           i=i+1
+    }
+
+
+// filling the "son" combo (if exists)
+
+    following=parseInt(currentbox)+1
+
+    if ((eval("typeof(document.getElementById(\"combo_"+following+"\"))!='undefined'")) &&
+       (document.getElementById("combo_"+following)!=null)) {
+       son = document.getElementById("combo_"+following);
+       stringa=stringa+"_"
+       i=0
+       while ((eval("typeof("+stringa+i+")!='undefined'")) || (i==0)) {
+
+       // if there are no options, I empty the first option of the "son" combo
+	   // otherwise I put "-select-" in it
+
+	   	  if ((i==0) && eval("typeof("+stringa+"0)=='undefined'"))
+	   	      if (eval("typeof("+stringa+"1)=='undefined'"))
+	   	         eval("son.options[0]=new Option(displaywhenempty,valuewhenempty)")
+	   	      else
+	             eval("son.options[0]=new Option(displaywhennotempty,valuewhennotempty)")
+	      else
+              eval("son.options["+i+"]=new Option("+stringa+i+".text,"+stringa+i+".value)")
+	      i=i+1
+	   }
+       //son.focus()
+       i=1
+       combostatus=''
+       cstatus=stringa.split("_")
+       while (cstatus[i]!=null) {
+          combostatus=combostatus+cstatus[i]
+          i=i+1
+          }
+       return combostatus;
+    }
+}
+//ENDS SECTION FOR COMBO DROP DOWN BOXES
+
+
+	
+//SELECT ALL BUTTON
+function selectAll(myCustomTextArea) {
+	var tempval=eval(document.myform.myCustomTextArea)
+	tempval.focus()
+	tempval.select()
+	}	
+
+//MAKES POP UP WINDOW FOR IMAGES, REUSED FOR ALL IMAGE POP UPS
+function openImage(url){ 
+	image=window.open(url,'name2','height=300,width=300');
+	if (window.focus) {image.focus()}
+	}	
+	
+function submitButton() {
+	
+	// Shortcut to your form
+	var frm = document.myform; 
+	
+	// Error handling
+	var err = 0; // Error indicator
+	var msg = ""; // Error message placeholder
+	
+	/* 
+	Start by declaring all of your local variables
+	By setting defaults, you don't need all of those else statements
+	later on in the code. This improves readability. You can concatenate all of your
+	var statements into one line, but I find that reduces readability for a very minimal
+	performance gain.
+	*/ 
+	
+	var salesman = ""; 
+	var opportunity = ""; 
+	var demoDate = "";
+	var demoDuration = ""; 
+	var arrivalTime = "";
+	var existingUser = "";
+    var existingUserList = ""; 
+    var existingCMMTextbox = "";
+    var attendee1 = "";
+    var attendee2 = "";
+    var attendee3 = "";
+    var attendee4 = "";
+    var attendeeTextArea = "";
+    var commentsTextArea = "";
+    var hotSpot;
+    var hotSpotList;
+    var hotSpotListFinal;
+    var hotSpotTextArea;             
+    var demoLocation;
+    var demoType;
+    var demoCMM;
+    var demoCMMList = "";
+    var commentsTextArea;
+	
+	
+		//GETS VALUES FROM EXISTING USER CMM CHECKBOXES AND THEN WILL BE USED IN VALIDATION IF LIST RETURNS BLANK	
+	     var existingUser;
+         var existingUserList = "";   
+         for (i=0; i<frm.existingUser.length; i++) {
+         		if (frm.existingUser[i].checked==true) {
+         			existingUserList += frm.existingUser[i].value + "\n";
+         		} 
+         	}   
+         	
+         //GETS VALUES FROM DEMO CMM CHECKBOX AND THEN WILL BE USED IN VALIDATION IF LIST RETURNS BLANK
+         var demoCMM;
+         var demoCMMList = "";   
+         for (i=0; i<frm.demoCMM.length; i++) {
+         		if (frm.demoCMM[i].checked==true) {
+         			demoCMMList += frm.demoCMM[i].value + "  ";
+         		} 
+         	}         	
+         	
+	
+        //VALIDATES THE REQUIRED FIELDS AND THROWS AN ERROR MESSAGE
+        if ((frm.salesman.value == "SELECT") || 
+         	(frm.opportunityTextbox.value == "") || 
+         	(frm.demoDate.value == "SELECT") || 
+         	(frm.demoDuration.value == "SELECT") ||
+         	(frm.arrivalTime.value == "SELECT") ||
+         	(existingUserList == "") ||
+         	(frm.attendee1.value == "") ||
+         	(frm.demoLocation.value == "SELECT") ||
+         	(frm.demoType.value == "SELECT") ||
+         	(demoCMMList == "") ||
+         	(frm.combo_0.value == "no answer") ||
+         	(frm.combo_1.value == "0") ||
+         	(frm.combo_2.value == "-1") ||
+         	(frm.combo_2.value == "0")){
+        	alert ("Please check required fields and re-submit.");	
+        	err = 1; 
+         }
+         
+	// If there are no errors found, proceed
+	if(err === 0){
+         	       	
+         //TESTS IF EXISTING CMM TEXTBOX IS BLANK
+         if (frm.existingCMMTextbox.value != "") {
+         	existingCMMTextbox = "Existing CMM details: " + frm.existingCMMTextbox.value + "\n";
+         }
+         else {
+         	existingCMMTextbox= ""
+         }	
+         //TESTS IF ATTENDEE1 TEXTBOX IS BLANK
+         if (frm.attendee1.value != "") {
+         	attendee1 = "Attendee 1: " + frm.attendee1.value + "\n";
+         }
+         else {
+         	attendee1 = ""
+         }	
+         //TESTS IF ATTENDEE2 TEXTBOX IS BLANK
+         if (frm.attendee2.value != "") {
+         	attendee2 = "Attendee 2: " + frm.attendee2.value + "\n";
+         }
+         else {
+         	attendee2 = ""
+         }	
+         //TESTS IF ATTENDEE3 TEXTBOX IS BLANK
+         if (frm.attendee3.value != "") {
+         	attendee3 = "Attendee 3: " + frm.attendee3.value + "\n";
+         }
+         else {
+         	attendee3 = ""
+         }	
+         //TESTS IF ATTENDEE4 TEXTBOX IS BLANK
+         if (frm.attendee4.value != "") {
+         	attendee4 = "Attendee 4: " + frm.attendee4.value + "\n";
+         }
+         else {
+         	attendee4 = ""
+         }	
+         //TESTS IF ATTENDEE TEXT AREA IS BLANK
+         if (frm.attendeeTextArea.value != "") {
+         	attendeeTextArea = "Attendee comments: " + frm.attendeeTextArea.value;
+         }
+         else {
+         	attendeeTextArea = ""
+         }	
+         //DEMO HOT SPOTS CHECKBOX OPTIONS
+         var hotSpot;
+         var hotSpotList = ""; 
+         var hotSpotListFinal = "";            
+         for (i=0; i<frm.hotSpot.length; i++) {
+         		if (frm.hotSpot[i].checked==true) {
+         			hotSpotList += frm.hotSpot[i].value + "\n";
+         		}
+         	}    
+         //MAKES HOT SPOT TITLE IN TEXT BOX IF ITS NOT BLANK
+         if (hotSpotList != "") {
+         	hotSpotListFinal = "Demo hot spots:" + "\n" + hotSpotList ;
+         	} 	     	
+         else {
+         	hotSpotListFinal = ""
+         	}
+         	
+         //TESTS IF DEMO HOT SPOTS TEXTBOX IS BLANK
+         if (frm.hotSpotTextArea.value != "") {
+         	hotSpotTextArea = "Hot spot comments: " + frm.hotSpotTextArea.value + "\n";
+         }
+         else {
+         	hotSpotTextArea= ""
+         }	
+         //TESTS IF COMMENTS TEXT AREA IS BLANK
+         if (frm.commentsTextArea.value != "") {
+         	commentsTextArea = "Comments: " + frm.commentsTextArea.value;
+         }
+         else {
+         	commentsTextArea = ""
+         }	
+  		
+         
+    	 //FILLS IN THE myCustomTextArea WITH ALL THE CHOSEN DATA
+    	 document.getElementById("myCustomTextArea").value = 
+    	 frm.salesman.value + "\n" + 
+    	 frm.opportunityTextbox.value + "\n" + "\n" + 
+    	 frm.demoDate.value + "\n" + 
+    	 frm.demoDuration.value + "\n" + 
+    	 frm.arrivalTime.value + "\n" + "\n" + 
+    	 existingUserList +
+    	 existingCMMTextbox + "\n" + 
+    	 attendee1 + attendee2 + attendee3 + attendee4 +
+    	 attendeeTextArea + "\n" +  
+    	 hotSpotListFinal +
+    	 hotSpotTextArea + "\n" + 
+    	 "Demo location: " + frm.demoLocation.value + "\n" +
+    	 "Demo type: " + frm.demoType.value + "\n" +
+    	 "Demo CMM: " + demoCMMList + "\n" + "\n" +
+ 		 "Quoted CMM: " + frm.combo_2.value + "\n" + "\n" + 
+    	 commentsTextArea
+    	 ;		
+		//frm.submit();
+	}
+}
+</script>
+<p>
+	<style type="text/css">
+/* USING CSS TO DEFINE LINK COLORS */
+	a:link {color:blue;}      /* UNVISITED LINK */
+	a:visited {color:blue;}   /* VISITED LINK */	
+	</style>
+</p>
+<p><span style="color:blue; font-weight: bold; font-size:150%">FOR ETSE SALESMEN ONLY</span></p>
+<p><span style="color:red">* </span>Indicates required field</p>
+<p><a href="javascript:openImage ('http://ellisontechnologies.com/sites/default/files/ETSE%20Zeiss%20images%20cigar.jpg');">Blue</a> Indicates link to more information or images</p>
+<form name="myform">
+	<!--SALESMAN DROP DOWN-->
+	<p><span style="color:red">* </span>Salesman:<select name="salesman"> <!-- USING SPAN RED FOR RED * -->
+		<option value="SELECT">SELECT</option>
+		<option value="Alan G 704-545-7362">Alan G</option>
+		<option value="Ben B 205-410-5956">Ben B</option>
+		<option value="Dallas W 704-545-7362">Dallas W</option>
+		<option value="John H 864-979-6010">John H</option>
+		<option value="Mario B 410-215-1596">Mario B</option>
+		<option value="Nigel B 770-317-0508">Nigel B</option>
+		<option value="Pete U 336-404-0794">Pete U</option>
+		<option value="Rob F 803-315-1694">Rob F</option>
+		<option value="Rob J 865-250-0381">Rob J</option>
+		<option value="Scott M 704-651-8088">Scott M</option>
+		<option value="Zac L 704-778-8180">Zac L</option></select></p>
+	<!--OPPORTUNITY TEXT BOX-->
+	<p><span style="color:red">* </span>Enter opportunity name from Salesforce</p>
+	<p><input name="opportunityTextbox" size="70" type="text" value="" /></p>
+	<p><span style="font-weight: bold; font-size:125%">Schedule</span></p>
+	<!--DEMO NEEDED IN ? WEEKS DROP DOWN-->
+	<p><span style="color:red">* </span>Demo needed in:<select name="demoDate">
+		<option value="SELECT">SELECT</option>
+		<option value="Demo needed in 1 week">1 week</option>
+		<option value="Demo needed in 2 weeks">2 weeks</option>
+		<option value="Demo needed in 3 weeks">3 weeks</option>
+		<option value="Demo needed in 4 weeks">4 weeks</option></select></p>
+	<!--DEMO DURATION DROP DOWN-->
+	<p><span style="color:red">* </span>Estimated demo duration: <select name="demoDuration">
+		<option value="SELECT">SELECT</option>
+		<option value="Demo duration: 15 minutes">15 minutes</option>
+		<option value="Demo duration: 1 - 2 hours">1 - 2 hours</option>
+		<option value="Demo duration: half day">half day</option>
+		<option value="Demo duration: full day">full day</option></select></p>
+	<!--ESTIMATED DEMO ARRIVAL TIME DROP DOWN-->
+	<p><span style="color:red">* </span>Estimated demo arrival time: <select name="arrivalTime">
+		<option value="SELECT">SELECT</option>
+		<option value="Arrival time: early morning">Early morning</option>
+		<option value="Arrival time: mid morning">Mid morning</option>
+		<option value="Arrival time: after lunch">After lunch</option></select></p>
+	<!--EXISTING USER CHECKBOXES-->	
+	<p><span style="font-weight: bold; font-size:125%">Customer information</span></p>
+	<p><span style="color:red">* </span>CMM background
+	<p> <input name="existingUser" type="checkbox" value="Customer is an existing Zeiss CMM user" />Existing Zeiss CMM user
+		<input name="existingUser" type="checkbox" value="Customer is an existing CMM user of other brands" />Existing CMM user of other brands
+		<input name="existingUser" type="checkbox" value="Customer is a new CMM User" />New CMM User</p>
+	<!--EXISTING CMM'S TEXT BOX-->
+	<p>Enter details (brand, make, model) about existing CMM's being used (both Zeiss and non-Zeiss)</p>
+	<p><input name="existingCMMTextbox" size="70" type="text" value="" /></p>
+	<!--ATTENDEE TEXT BOXES, ONLY FIRST ONE IS REQUIRED-->
+	<p>Must include at least one attendee name that is already a contact in Salesforce.</p>
+	<p><span style="color:red">* </span>Full name<input name="attendee1" size="70" type="text" value="" /></p>
+	<p>Full name<input name="attendee2" size="70" type="text" value="" /></p>
+	<p>Full name<input name="attendee3" size="70" type="text" value="" /></p>
+	<p>Full name<input name="attendee4" size="70" type="text" value="" /></p>
+	<!--MAKES ATTENDEE TEXT AREA CALLED attendeeTextArea -->
+	<p>Include information about the customer such as prior CMM experience, misconceptions to overcome, etc.</p>
+	<textarea cols="80" id="attendeeTextArea" name="attendeeTextArea" rows="2"></textarea>
+	<!--DEMO HOT SPOTS CHECKBOXES-->
+	<p><span style="font-weight: bold; font-size:125%">Demo Hot Spots</span></p>
+	<p> <input name="hotSpot" type="checkbox" value="Auto run - user / operator interface" />Auto run - user / operator interface
+		<input name="hotSpot" type="checkbox" value="Speed / throughput" />Speed / throughput
+		<input name="hotSpot" type="checkbox" value="Accuracy / repeatability" />Accuracy / repeatability
+		<input name="hotSpot" type="checkbox" value="CAD programming" />CAD programming
+		<input name="hotSpot" type="checkbox" value="Ease of programming" />Ease of programming
+		<input name="hotSpot" type="checkbox" value="Data handling" />Data handling
+		<input name="hotSpot" type="checkbox" value="Service / support" />Service / support
+		<input name="hotSpot" type="checkbox" value="Rotary table" />Rotary table
+		<p><span style="font-weight: bold; ">Software options</span>
+		<input name="hotSpot" type="checkbox" value="Curve" />Curve
+		<input name="hotSpot" type="checkbox" value="Free Form" />Free Form		
+		<input name="hotSpot" type="checkbox" value="PCM" />PCM
+		<input name="hotSpot" type="checkbox" value="GearPro" />GearPro</p>	
+	<!--DEMO HOT SPOTS TEXT AREA-->
+	<p>Note if certain areas are more important and any other comments regarding demo hot spots.</p>
+	<p><textarea cols="80" id="hotSpotTextArea" name="hotSpotTextArea" rows="2"></textarea></p>
+	<!--DEMO LOCATION DROP DOWN -->
+	<p><span style="font-weight: bold; font-size:125%">Demo Requirements</span></p>		
+	<p><span style="color:red">* </span>Location<select name="demoLocation">
+	<option value="SELECT">SELECT</option>
+	<option value="Live demo at ETSE Charlotte">Live demo at ETSE Charlotte</option>
+	<option value="Web demo">Web demo</option></select></p>
+	<!--DEMO TYPE DROP DOWN -->	
+	<p><span style="color:red">* </span>Type <a href="http://www.ellisontechnologies.com/zeissdemotypes" target="_blank">More information about demo types</a><select name="demoType">
+	<option value="SELECT">SELECT</option>
+	<option value="Generic introductory demo without parts">Generic introductory demo without parts</option>
+	<option value="Generic demo with generic parts">Generic demo with generic parts</option>
+	<option value="Custom cold demo with customer parts">Custom demo with customer parts</option>
+	<option value="Custom prepared demo with customer parts">Custom prepared demo with customer parts</option></select></p>
+	<!--DEMO CMM CHECKBOXES-->
+	<p><span style="color:red">* </span>Demo on which CMM(s): 
+		<input name="demoCMM" type="checkbox" value="Accura II Aktiv VAST XT Gold (lab)" />Accura II Aktiv VAST XT Gold (lab)
+		<input name="demoCMM" type="checkbox" value="Contura G2 RDS XXT (lab)" />Contura G2 RDS XXT (lab)
+		<input name="demoCMM" type="checkbox" value="DuraMax (shopfloor)" />DuraMax (shopfloor)</p>	
+	<!-- START SECTION FOR MACHINE TYPE DROP DOWN -->
+	<p><span style="font-weight: bold; font-size:125%">Quoted machine details</span></p>
+	<p><span style="color:red">* </span>CMM - all three drop downs are required.</p>
+	<p><select id="combo_0" name="combo0" onchange="change(this);" size="1" style="width:345;height:19"><option value="no answer">Select make</option><option value="DuraMax">DuraMax</option><option value="Contura G2 - Direkt">Contura G2 - Direkt</option><option value="Contura G2 - RDS">Contura G2 - RDS</option><option value="Contura G2 - Aktiv">Contura G2 - Aktiv</option><option value="Contura G2 - Navigator">Contura G2 - Navigator</option><option value="Accura II">Accura II</option><option value="Prismo Navigator 5 &amp; 7">Prismo Navigator 5 &amp; 7</option><option value="Prismo Navigator 10 - HTG">Prismo Navigator 10</option><option value="Prismo Navigator 10 S-ACC">Prismo Navigator Ultra</option><option value="CenterMax">CenterMax</option><option value="GageMax">GageMax</option><option value="FaroArm">FaroArm</option><option value="Spectrum II - Direkt XDT">Spectrum II - Direkt XDT</option><option value="Spectrum II - RDS TP20">Spectrum II - RDS TP20</option><option value="Spectrum II - RDS XDT">Spectrum II - RDS XDT</option><option value="Micura">Micura</option></select><select id="combo_1" name="combo1" onchange="change(this)" size="1" style="width:346;height:19"><option value="value1">Select model</option></select><select id="combo_2" name="combo2" onchange="change(this);" size="1" style="width:346;height:19"><option value="value1">Select table size</option></select></p>
+	<!-- END SECTION FOR MACHINE TYPE DROP DOWN -->
+	<p><span style="font-weight: bold; font-size:125%">Additional comments / instructions:</span></p>
+	<p>Include any other information that may help in the preparation of this demonstration</p>
+	<!--MAKES COMMENTS TEXT AREA CALLED commentsTextArea -->
+	<textarea cols="80" id="commentsTextArea" name="commentsTextArea" rows="3"></textarea>
+	<!--MAKES SUBMIT BUTTON TO CALL FUNCTION submitButton-->  <!--MAKES SELECT ALL BUTTON TO CALL FUNCTION selectAll-->
+	<p><input onclick="submitButton()" return="" type="button" value="SUBMIT" />  <input onclick="selectAll(myCustomTextArea)" type="button" value="SELECT ALL" />
+	Copy and paste this into the Machine Options section of your Quote Request.  Assign Ryan the task with email notification checked.</p>
+	<!--MAKES TEXT AREA CALLED myCustomTextArea --><textarea cols="80" id="myCustomTextArea" name="myCustomTextArea" rows="30">This is where the magic happens after you click SUBMIT. Be sure to re-click SUBMIT if you make any changes.</textarea>
+</form>
